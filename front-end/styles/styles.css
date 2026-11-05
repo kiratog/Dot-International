@@ -151,6 +151,7 @@ header h1{
     text-align: center;
     letter-spacing: -5%;
     animation: bottum-in 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    font-weight: 800;
 }
 header h2{
     margin: 0;
@@ -163,8 +164,15 @@ header h2{
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
-    align-items: center;
-    justify-items: center;
+    justify-content: center;
+}
+.btn-cta{
+    animation: right-in 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 2;
+}
+.btn-cta-sec{
+    animation: left-in 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 3;
 }
 header a svg{
     fill: var(--primary);
@@ -505,6 +513,14 @@ footer img{
         transform: translateX(0);
     }
 }
+@keyframes left-in {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 @keyframes bottum-in {
     from{
         transform: translateY(100%);
@@ -522,6 +538,27 @@ footer img{
     }
 }
 
+/* 2) The blur-in */
+.blur-reveal {
+  color: var(--text);
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateY(0.4em);
+  transition:
+    opacity   0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter    1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--delay, 0s);
+}
+.blur-reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blur-reveal { opacity: 1; filter: none; transform: none; transition: none; }
+}
 .btn{
     text-decoration: none;
     color: var(--primary);
@@ -553,8 +590,10 @@ footer img{
 }
 .wrap{
     overflow: hidden;
-    position: relative;
-    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
 }
 .align-center{
     text-align: center;
