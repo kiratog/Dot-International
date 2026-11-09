@@ -109,3 +109,4 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
 
   items.forEach(el => io.observe(el));
 }
+
