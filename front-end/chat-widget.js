@@ -7,7 +7,7 @@
   // Change apiBaseUrl for production. Do not put your Gemini API key here.
   // Add DOT's verified WhatsApp number as digits only (country code + number).
   window.DOT_CHAT_CONFIG = window.DOT_CHAT_CONFIG || {
-    apiBaseUrl: "http://localhost:3000",
+    apiBaseUrl: "https://dot-international.onrender.com",
     whatsappNumber: ""
   };
 
