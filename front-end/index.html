@@ -11,97 +11,97 @@
     <noscript><style>.blur-reveal{opacity:1;filter:none;transform:none}</style></noscript>
 </head>
 <body>
-<div class="dot-chat" data-dot-chat>
-  <section
-    class="dot-chat__panel"
-    id="dot-chat-panel"
-    role="dialog"
-    aria-label="DOT International chat assistant"
-    aria-modal="false"
-    aria-hidden="true"
-    tabindex="-1"
-  >
-    <header class="dot-chat__header">
-      <div class="dot-chat__brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5h-6.2l-4.9 3.4c-.6.4-1.4 0-1.4-.8V16A2.5 2.5 0 0 1 4 13.5v-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-          <circle cx="8.5" cy="9.5" r="1" fill="currentColor"/>
-          <circle cx="12" cy="9.5" r="1" fill="currentColor"/>
-          <circle cx="15.5" cy="9.5" r="1" fill="currentColor"/>
-        </svg>
-      </div>
-      <div class="dot-chat__brand-copy">
-        <strong>DOT International</strong>
-      </div>
-      <button class="dot-chat__header-close" type="button" aria-label="Close chat" data-dot-chat-close>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-      </button>
-    </header>
+  <div class="dot-chat" data-dot-chat>
+    <section
+      class="dot-chat__panel"
+      id="dot-chat-panel"
+      role="dialog"
+      aria-label="DOT International chat assistant"
+      aria-modal="false"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <header class="dot-chat__header">
+        <div class="dot-chat__brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5h-6.2l-4.9 3.4c-.6.4-1.4 0-1.4-.8V16A2.5 2.5 0 0 1 4 13.5v-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <circle cx="8.5" cy="9.5" r="1" fill="currentColor"/>
+            <circle cx="12" cy="9.5" r="1" fill="currentColor"/>
+            <circle cx="15.5" cy="9.5" r="1" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="dot-chat__brand-copy">
+          <strong>DOT International</strong>
+        </div>
+        <button class="dot-chat__header-close" type="button" aria-label="Close chat" data-dot-chat-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
 
-    <div class="dot-chat__messages" data-dot-chat-messages aria-live="polite" aria-relevant="additions text">
-      <div class="dot-chat__welcome-block">
-        <div class="dot-chat__message-row">
-          <div class="dot-chat__avatar" aria-hidden="true">D</div>
-          <div class="dot-chat__message-content">
-            <div class="dot-chat__bubble dot-chat__bubble--assistant">
-              Hi! Welcome to DOT International. I'm here to help with your questions about our exhibition, event and event-interior work. What would you like to explore?
+      <div class="dot-chat__messages" data-dot-chat-messages aria-live="polite" aria-relevant="additions text">
+        <div class="dot-chat__welcome-block">
+          <div class="dot-chat__message-row">
+            <div class="dot-chat__avatar" aria-hidden="true">D</div>
+            <div class="dot-chat__message-content">
+              <div class="dot-chat__bubble dot-chat__bubble--assistant">
+                Hi! Welcome to DOT International. I'm here to help with your questions about our exhibition, event and event-interior work. What would you like to explore?
+              </div>
+            </div>
+          </div>
+          <div class="dot-chat__suggestions-block">
+            <p class="dot-chat__suggestions-title">Things you could ask</p>
+            <div class="dot-chat__suggestions" data-dot-chat-suggestions>
+              <button type="button" class="dot-chat__suggestion" data-dot-prompt="What does DOT International do?">
+                <span>What does DOT International do?</span><span aria-hidden="true">→</span>
+              </button>
+              <button type="button" class="dot-chat__suggestion" data-dot-prompt="I'm planning an exhibition. How can DOT help?">
+                <span>I'm planning an exhibition</span><span aria-hidden="true">→</span>
+              </button>
+              <button type="button" class="dot-chat__suggestion" data-dot-prompt="I want to discuss an event project.">
+                <span>I want to discuss an event</span><span aria-hidden="true">→</span>
+              </button>
+              <button type="button" class="dot-chat__suggestion" data-dot-prompt="How can I speak with someone from DOT International?">
+                <span>How can I contact your team?</span><span aria-hidden="true">→</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="dot-chat__suggestions-block">
-          <p class="dot-chat__suggestions-title">Things you could ask</p>
-          <div class="dot-chat__suggestions" data-dot-chat-suggestions>
-            <button type="button" class="dot-chat__suggestion" data-dot-prompt="What does DOT International do?">
-              <span>What does DOT International do?</span><span aria-hidden="true">→</span>
-            </button>
-            <button type="button" class="dot-chat__suggestion" data-dot-prompt="I'm planning an exhibition. How can DOT help?">
-              <span>I'm planning an exhibition</span><span aria-hidden="true">→</span>
-            </button>
-            <button type="button" class="dot-chat__suggestion" data-dot-prompt="I want to discuss an event project.">
-              <span>I want to discuss an event</span><span aria-hidden="true">→</span>
-            </button>
-            <button type="button" class="dot-chat__suggestion" data-dot-prompt="How can I speak with someone from DOT International?">
-              <span>How can I contact your team?</span><span aria-hidden="true">→</span>
-            </button>
-          </div>
-        </div>
       </div>
-    </div>
 
-    <form class="dot-chat__composer" data-dot-chat-form>
-      <label class="dot-chat__sr-only" for="dot-chat-input">Write your message</label>
-      <input
-        id="dot-chat-input"
-        class="dot-chat__input"
-        type="text"
-        name="message"
-        placeholder="Ask us anything..."
-        autocomplete="off"
-        maxlength="2000"
-        required
-      >
-      <button class="dot-chat__send" type="submit" aria-label="Send message" data-dot-chat-send>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-5.5 16-2.8-6.2L4 12Z"/><path d="m11.7 13.8 4.6-4.6"/></svg>
-      </button>
-    </form>
-    <div class="dot-chat__footnote">DOT International · How can we help?</div>
-  </section>
+      <form class="dot-chat__composer" data-dot-chat-form>
+        <label class="dot-chat__sr-only" for="dot-chat-input">Write your message</label>
+        <input
+          id="dot-chat-input"
+          class="dot-chat__input"
+          type="text"
+          name="message"
+          placeholder="Ask us anything..."
+          autocomplete="off"
+          maxlength="2000"
+          required
+        >
+        <button class="dot-chat__send" type="submit" aria-label="Send message" data-dot-chat-send>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-5.5 16-2.8-6.2L4 12Z"/></svg>
+        </button>
+      </form>
+      <div class="dot-chat__footnote">DOT International · How can we help?</div>
+    </section>
 
-  <button
-    class="dot-chat__launcher"
-    type="button"
-    aria-label="Open DOT chat assistant"
-    aria-expanded="false"
-    aria-controls="dot-chat-panel"
-    data-dot-chat-toggle
-  >
-    <svg class="dot-chat__launcher-chat" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z"/>
-      <circle cx="8.5" cy="11.5" r=".8"/><circle cx="12" cy="11.5" r=".8"/><circle cx="15.5" cy="11.5" r=".8"/>
-    </svg>
-    <svg class="dot-chat__launcher-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-  </button>
-</div>
+    <button
+      class="dot-chat__launcher"
+      type="button"
+      aria-label="Open DOT chat assistant"
+      aria-expanded="false"
+      aria-controls="dot-chat-panel"
+      data-dot-chat-toggle
+    >
+      <svg class="dot-chat__launcher-chat" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z"/>
+        <circle cx="8.5" cy="11.5" r=".8"/><circle cx="12" cy="11.5" r=".8"/><circle cx="15.5" cy="11.5" r=".8"/>
+      </svg>
+      <svg class="dot-chat__launcher-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
 
 
 
